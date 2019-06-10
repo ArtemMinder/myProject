@@ -1,0 +1,62 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+class user{
+    string name;
+    int age;
+    int sex;
+    int target;
+    double mass;
+    double height;
+    double volumewater;
+    public:
+    void create_id(){
+        cout<<"Enter your name:"<<endl;
+        cin>>name;
+        cout<<"Enter your age:"<<endl;
+        cin>>age;
+        cout<<"Enter your sex: m or f:"<<endl;
+         cout<<"1)m:"<<endl;
+         cout<<"2)f:"<<endl;
+        cin>>sex;
+       /* cout<<"Enter your mass: "<<endl;
+        cin>>mass;
+
+        cout<<name<<"  "<<age<<"  "<<sex<<" "<<mass;*/
+
+        };
+        void vater(){
+            cout<<"Enter your mass: "<<endl;
+            cin>>mass;
+            if(sex==1){
+                volumewater=mass*35;}
+                if(sex==2){
+                    volumewater=mass*31;
+                }
+                cout<<"Your norm of water is: "<<volumewater<<" m.litres";
+
+
+
+            }
+        void training(){
+            cout<<"Your target is:"<<endl;
+            cout<<"1)"<<endl;
+            cout<<"1)"<<endl;
+            cout<<"1)"<<endl;
+            cin>>target;
+        }
+
+
+class training{
+
+    };
+int main()
+{
+  user useraccount;
+  useraccount.create_id();
+  useraccount.vater();
+  return 0;
+  system("pause");
+}
